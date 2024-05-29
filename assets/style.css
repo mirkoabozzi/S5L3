@@ -21,6 +21,7 @@ body {
 .navBtn {
   justify-content: space-between;
   list-style-type: none;
+  align-items: center;
 }
 ul {
   background-color: #fbf7e3;
@@ -62,6 +63,7 @@ h2 {
 h3 {
   margin-block: 1rem;
   font-weight: bold;
+  font-size: 18px;
 }
 
 .card {
@@ -71,8 +73,11 @@ h3 {
   border-radius: 50px;
 }
 .card img {
-  width: 240px;
+  max-width: 100%;
   border-radius: 50px 50px 0 0;
+}
+.visibility {
+  display: none;
 }
 .price {
   justify-content: space-around;
@@ -115,10 +120,38 @@ section2 {
 }
 @media screen and (max-width: 576px) {
   ul {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 1rem;
   }
+  li {
+    width: 120px;
+    justify-content: center;
+  }
+
+  .bigger {
+    order: -1;
+    padding-inline: 3rem;
+    border-radius: 5rem;
+    width: 200px;
+  }
+  h1 {
+    text-align: center;
+  }
+  ul {
+    border-radius: 80px;
+  }
+  h2 {
+    text-align: center;
+  }
+  section2 {
+    margin: 1rem;
+  }
+  section2 img {
+    margin-top: 1rem;
+  }
 }
+
 @media screen and (min-width: 768px) {
   body {
     display: flex;
@@ -127,8 +160,43 @@ section2 {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    min-height: 100vh;
+    justify-content: unset;
   }
   .bigger {
     order: -1;
+  }
+  .cardsContainer {
+    justify-content: space-around;
+    margin-inline: 3rem;
+  }
+  h1 {
+    margin-left: 3rem;
+  }
+  article {
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    margin-inline: 3rem;
+  }
+  article img {
+    width: 50%;
+    object-fit: contain;
+    order: -1;
+  }
+  .visibility {
+    display: flex;
+  }
+
+  li {
+    width: 8rem;
+    height: 4rem;
+    justify-content: center;
+  }
+  h2 {
+    margin-left: 3rem;
+  }
+  .articleContainer {
+    margin-inline: 1rem;
   }
 }
