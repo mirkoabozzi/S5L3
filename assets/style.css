@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #742308;
+}
+.flex {
+  display: flex;
+}
+.flexDirection {
+  flex-direction: column;
+}
+.flexWrap {
+  flex-wrap: wrap;
+}
+.navBar {
+}
+.navBtn {
+  justify-content: space-between;
+  list-style-type: none;
+}
+ul {
+  background-color: #fbf7e3;
+  padding: 1.5rem;
+}
+li {
+  background-color: #f3df84;
+  color: #61240a;
+  padding: 0.8rem;
+  border-radius: 30px;
+  align-items: center;
+}
+#bee {
+  width: 40px;
+}
+li span {
+  align-items: center;
+}
+.fontColor {
+  color: #742308;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-block: 1rem;
+  margin-left: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-block: 1.5rem;
+  margin-left: 10px;
+}
+h3 {
+  margin-block: 1rem;
+}
+
+.card {
+  width: 200px;
+  height: 250px;
+  background-color: #fbf7e3;
+  border-radius: 50px;
+}
+.card img {
+  width: 200px;
+  border-radius: 50px 50px 0 0;
+}
+.price {
+  justify-content: space-around;
+}
+.price p {
+  align-items: center;
+}
+button {
+  width: 7rem;
+  background-color: #f3df84;
+  border: none;
+  border-radius: 10px;
+  margin-inline: auto;
+}
+h3 span {
+  font-size: 13px;
+}
+.cardsContainer {
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+article {
+  background-color: #fbf7e3;
+  padding: 1.5rem;
+  border-radius: 30px;
+}
+article img {
+  width: 100%;
+}
