@@ -32,12 +32,16 @@ li {
   padding: 0.8rem;
   border-radius: 30px;
   align-items: center;
+  margin-inline: auto;
 }
 #bee {
   width: 40px;
 }
 li span {
   align-items: center;
+}
+.bigger {
+  font-size: 1.5rem;
 }
 .fontColor {
   color: #742308;
@@ -57,16 +61,17 @@ h2 {
 }
 h3 {
   margin-block: 1rem;
+  font-weight: bold;
 }
 
 .card {
-  width: 200px;
-  height: 250px;
+  width: 240px;
+  height: 300px;
   background-color: #fbf7e3;
   border-radius: 50px;
 }
 .card img {
-  width: 200px;
+  width: 240px;
   border-radius: 50px 50px 0 0;
 }
 .price {
@@ -79,14 +84,16 @@ button {
   width: 7rem;
   background-color: #f3df84;
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
   margin-inline: auto;
+  margin-top: 1rem;
+  padding: 0.4rem;
 }
 h3 span {
-  font-size: 13px;
+  font-size: 12px;
 }
 .cardsContainer {
-  gap: 2rem;
+  gap: 2.5rem;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -94,7 +101,15 @@ article {
   background-color: #fbf7e3;
   padding: 1.5rem;
   border-radius: 30px;
+  max-width: 576px;
 }
 article img {
   width: 100%;
+}
+section {
+}
+section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
